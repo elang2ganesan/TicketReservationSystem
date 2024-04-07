@@ -1,8 +1,6 @@
 package com.ticket.booking.model;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Ticket {
     private String ticketNumer;
     private String sourceStation;
