@@ -61,10 +61,7 @@ public class TicketBookingServiceRepository {
             return ticket;
     }
 
-    public Ticket fetchReceiptDetail(String userId) throws TicketNotFound, BusinessValidationException {
-        if (!StringUtils.hasText(userId)) {
-            throw new BusinessValidationException("Invalid user id is passed");
-        }
+    public Ticket fetchReceiptDetail(String userId) throws TicketNotFound {
         try {
             Ticket ticketFetched = ticketsList.stream().filter(
                     ticket -> ticket.getUser().getUserId().equals(userId.trim())).findFirst().get();

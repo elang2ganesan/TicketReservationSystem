@@ -2,7 +2,7 @@ package com.ticket.booking.request;
 
 public class TicketModifyRequest {
 
-    String userId;
+    private String userId;
 
     public String getUserId() {
         return userId;
