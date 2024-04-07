@@ -1,9 +1,9 @@
 # TicketReservationSystem
 
 # 1. Purchase Ticket API
-===========================
+
 API: http://localhost:8080/train/booking
-============================
+
 Request Body:
 {
     "trainNumber": "1234",
@@ -17,7 +17,7 @@ Request Body:
     },
     "ticketFare": "2000"
 }
-=================================
+
 
 Response: 200 https code with Ticket details as below
 {
