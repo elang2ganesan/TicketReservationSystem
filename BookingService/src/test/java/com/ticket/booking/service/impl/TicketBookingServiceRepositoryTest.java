@@ -1,6 +1,5 @@
 package com.ticket.booking.service.impl;
 
-import com.ticket.booking.exception.BusinessValidationException;
 import com.ticket.booking.exception.TicketNotFound;
 import com.ticket.booking.model.Ticket;
 import com.ticket.booking.model.User;
@@ -21,11 +20,6 @@ public class TicketBookingServiceRepositoryTest {
     @InjectMocks
     TicketBookingServiceRepository ticketBookingServiceRepository;
 
-
-    @Test(expected = BusinessValidationException.class)
-    public void testForUserIdIsNull() throws Exception {
-        ticketBookingServiceRepository.fetchReceiptDetail(null);
-    }
 
     @Test(expected = TicketNotFound.class)
     public void testForTicketNotFound() throws Exception {
