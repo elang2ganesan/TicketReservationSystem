@@ -54,6 +54,9 @@ public class TicketBookingSerivceImpl implements TicketBookingSerivce {
 
     @Override
     public Ticket fetchReceiptDetail(String userId) throws TicketNotFound, BusinessValidationException {
+        if (!StringUtils.hasText(userId)) {
+            throw new BusinessValidationException("Invalid user id is passed");
+        }
         return ticketBookingServiceRepository.fetchReceiptDetail(userId);
     }
 
