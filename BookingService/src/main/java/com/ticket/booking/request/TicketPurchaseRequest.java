@@ -6,11 +6,11 @@ import com.ticket.booking.model.User;
 
 public class TicketPurchaseRequest {
 
-    User user;
-    String sourceStation;
-    String endStation;
-    Double ticketFare;
-    Integer trainNumber;
+    private User user;
+    private String sourceStation;
+    private String endStation;
+    private Double ticketFare;
+    private Integer trainNumber;
 
     //Date
 
